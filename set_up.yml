@@ -1,0 +1,33 @@
+- name: Add Windows Cred
+  ansible.controller.credential:
+    name: "Windows Credential"
+    description: "Credential to be used to connect to Windows"
+    organization: "Default"
+    credential_type: Machine
+    inputs:
+      username: "{{ student_username }}"
+      password: "{{ student_password }}"
+    state: present
+    tower_host: "{{ aap_host }}"
+    tower_username: "{{ student_username }}"
+    tower_password: "{{ student_password }}"
+
+- name: Ansible Workshop Project
+  ansible.controller.project:
+    name: "Ansible Workshop Project"
+    description: "Windows Workshop Project"
+    organization: "Default"
+    scm_branch: main
+    scm_clean: true
+    scm_type: git
+    scm_update_on_launch: true
+    scm_url: "https://github.com/rippa86/Win-Ansible101.git"
+    update_project: true
+    default_environment: "windows workshop execution environment"
+    wait: true
+    state: present
+    tower_host: "{{ aap_host }}"
+    tower_username: "{{ student_username }}"
+    tower_password: "{{ student_password }}"
+
+    
