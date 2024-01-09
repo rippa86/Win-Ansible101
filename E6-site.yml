@@ -3,6 +3,10 @@
   name: IIS but with a role!
 
   tasks:
-    - name: include iis role
-        ansible.builtin.include_role:
-          name: iis_simple
+  - name: debug
+    ansible.builtin.debug:
+      msg: "Hello world"
+      
+  - name: include iis role
+      ansible.builtin.include_role:
+        name: iis_simple
