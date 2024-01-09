@@ -1,0 +1,6 @@
+---
+dependencies:
+  - src: https://github.com/rippa86/iis_simple.git
+    scm: git
+    version: main
+    name: iis_simple
