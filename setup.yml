@@ -87,5 +87,6 @@
       - { name: "E4 remove IIS", playbook: "E4-remove_iis.yml" }
       - { name: "E5 IIS Advanced", playbook: "E5-site.yml" }
       - { name: "E6 IIS Advanced", playbook: "E6-site.yml" }
+      - { name: "rippa-requirements", playbook: "rippa-requirement.yml" }
 
 

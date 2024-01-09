@@ -1,0 +1,12 @@
+---
+- hosts: windows
+  name: IIS but with a role!
+
+  tasks:
+  - name: debug
+    ansible.builtin.debug:
+      msg: "Hello world"
+
+  - name: include iis role from requirements.yml
+    ansible.builtin.include_role:
+      name: iss_simple
