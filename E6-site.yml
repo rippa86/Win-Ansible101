@@ -1,9 +1,8 @@
-    ---
-    - hosts: windows
-      name: This is my role-based playbook
+---
+- hosts: windows
+  name: IIS but with a role!
 
-      tasks:
-
-      - name: include iis role
+  tasks:
+    - name: include iis role
         ansible.builtin.include_role:
           name: iis_simple
