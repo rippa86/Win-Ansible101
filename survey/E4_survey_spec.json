@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "description": "",
+    "spec": [
+        {
+            "question_name": "Enter IIS Test Message",
+            "question_description": "What is the test message",
+            "required": true,
+            "type": "text",
+            "variable": "iis_test_message",
+            "min": 0,
+            "max": 50,
+            "default": "",
+            "choices": "",
+            "new_question": true
+        }
+    ]
+}

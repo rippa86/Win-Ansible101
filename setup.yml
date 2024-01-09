@@ -46,8 +46,7 @@
       credentials:
         - "Windows Credential"
       survey_enabled: true
-      survey_spec:
-        iis_test_message: "iis_test_message"
+      survey_spec: "{{ lookup('file', '{{ survey/E4_survey_spec.json') }}"
       state: present
       tower_host: "{{ aap_host }}"
       tower_username: "{{ student_username }}"
