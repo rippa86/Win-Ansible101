@@ -4,7 +4,7 @@
 
   tasks:
 
-    - name: Start iis service
+    - name: Stop iis service
       ansible.windows.win_service:
         name: W3Svc
         state: stopped

@@ -1,0 +1,9 @@
+    ---
+    - hosts: windows
+      name: This is my role-based playbook
+
+      tasks:
+
+      - name: include iis role
+        include_role:
+          name: iis_simple
