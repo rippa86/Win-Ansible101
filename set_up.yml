@@ -1,3 +1,4 @@
+---
 - name: Add Windows Cred
   ansible.controller.credential:
     name: "Windows Credential"
@@ -30,4 +31,4 @@
     tower_username: "{{ student_username }}"
     tower_password: "{{ student_password }}"
 
-    
+
